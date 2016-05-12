@@ -11,9 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{84705E63-A5A4-4A35-AEC1-389BDA5CD7BC}</ProjectGuid>
+    <ProjectGuid>{0799C2C6-05F8-410F-8089-020651E8687C}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>My02FrogRiverOne</RootNamespace>
+    <RootNamespace>My02MinimalMissingValue</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -78,11 +78,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="02-FrogRiverOne.cpp" />
+    <ClCompile Include="02-MinimalMissingValue.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
