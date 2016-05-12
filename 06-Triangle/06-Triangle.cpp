@@ -11,9 +11,9 @@ using namespace std;
 
 bool isTriangular(const vector<int>& A, unsigned p, unsigned q, unsigned r)
 {
-    return (A[p] + A[q] > A[r])
-        && (A[q] + A[r] > A[p])
-        && (A[r] + A[p] > A[q]);
+    return ((long long)A[p] + (long long)A[q] > (long long)A[r])
+        && ((long long)A[q] + (long long)A[r] > (long long)A[p])
+        && ((long long)A[r] + (long long)A[p] > (long long)A[q]);
 }
 
 int solution(vector<int>& A)
@@ -29,7 +29,8 @@ int solution(vector<int>& A)
     {
         for (int q = p+1; q < A.size() - 1; ++q)
         {
-            for (int r = q + 1; r < A.size(); ++r)
+            //for (int r = q+1; r < A.size(); ++r)
+            int r = q + 1;
             {
                 if (isTriangular(A, p, q, r)) 
                 {
@@ -46,5 +47,7 @@ int main()
 {
     assert(solution(vector<int>({10,2,5,1,8,20})) == 1);
     assert(solution(vector<int>({10,50,5,1})) == 0);
+    assert(solution(vector<int>({ LONG_MAX, LONG_MAX, LONG_MAX })) == 1);
+    assert(solution(vector<int>({ 2,3,5,10 })) == 1);
 }
 
