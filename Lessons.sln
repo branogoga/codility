@@ -3,27 +3,27 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01-TapeEquilibrium", "01-TapeEquilibrium\01-TapeEquilibrium.vcxproj", "{49579E92-8EF6-48EB-ADCF-A5C3B4BB4EE2}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03-TapeEquilibrium", "01-TapeEquilibrium\01-TapeEquilibrium.vcxproj", "{49579E92-8EF6-48EB-ADCF-A5C3B4BB4EE2}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01-PermMissingElem", "01-PermMissingElem\01-PermMissingElem.vcxproj", "{9B4E9466-801A-4174-8DB3-709555920DBE}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03-PermMissingElem", "01-PermMissingElem\01-PermMissingElem.vcxproj", "{9B4E9466-801A-4174-8DB3-709555920DBE}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01-FrogJump", "01-FrogJump\01-FrogJump.vcxproj", "{40A07986-60C9-4B17-8C21-D06F3AFA010B}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03-FrogJump", "01-FrogJump\01-FrogJump.vcxproj", "{40A07986-60C9-4B17-8C21-D06F3AFA010B}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02-FrogRiverOne", "02-FrogRiverOne\02-FrogRiverOne.vcxproj", "{84705E63-A5A4-4A35-AEC1-389BDA5CD7BC}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "04-FrogRiverOne", "02-FrogRiverOne\02-FrogRiverOne.vcxproj", "{84705E63-A5A4-4A35-AEC1-389BDA5CD7BC}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02-PermCheck", "02-PermCheck\02-PermCheck.vcxproj", "{BD8B5CD3-CCE3-470D-A98D-4E2C0A7FD4E9}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "04-PermCheck", "02-PermCheck\02-PermCheck.vcxproj", "{BD8B5CD3-CCE3-470D-A98D-4E2C0A7FD4E9}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02-MinimalMissingValue", "02-MinimalMissingValue\02-MinimalMissingValue.vcxproj", "{0799C2C6-05F8-410F-8089-020651E8687C}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "04-MinimalMissingValue", "02-MinimalMissingValue\02-MinimalMissingValue.vcxproj", "{0799C2C6-05F8-410F-8089-020651E8687C}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02-MaxCounters", "02-MaxCounters\02-MaxCounters.vcxproj", "{9D975DC0-AA2E-4F76-9112-668FD8C14B34}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "04-MaxCounters", "02-MaxCounters\02-MaxCounters.vcxproj", "{9D975DC0-AA2E-4F76-9112-668FD8C14B34}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03-PassingCars", "03-PassingCars\03-PassingCars.vcxproj", "{0B411528-67D8-474E-8E75-493580FD1172}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "05-PassingCars", "03-PassingCars\03-PassingCars.vcxproj", "{0B411528-67D8-474E-8E75-493580FD1172}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03-CountDiv", "03-CountDiv\03-CountDiv.vcxproj", "{4F55833A-C8D1-42E6-B39A-FF529AD1E299}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "05-CountDiv", "03-CountDiv\03-CountDiv.vcxproj", "{4F55833A-C8D1-42E6-B39A-FF529AD1E299}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03-MinAvgTwoSlices", "03-MinAvgTwoSlices\03-MinAvgTwoSlices.vcxproj", "{AF5D0123-3EB3-47EC-9882-13ACC019AD6B}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "05-MinAvgTwoSlices", "03-MinAvgTwoSlices\03-MinAvgTwoSlices.vcxproj", "{AF5D0123-3EB3-47EC-9882-13ACC019AD6B}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03-GenomicRangeQuery", "03-GenomicRangeQuery\03-GenomicRangeQuery.vcxproj", "{FC39E803-9096-4467-90D2-340F210F7E57}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "05-GenomicRangeQuery", "03-GenomicRangeQuery\03-GenomicRangeQuery.vcxproj", "{FC39E803-9096-4467-90D2-340F210F7E57}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "06-Triangle", "06-Triangle\06-Triangle.vcxproj", "{8EA0DF4D-807E-4BC1-895C-E901BF2B279F}"
 EndProject
@@ -31,7 +31,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "06-Distinct", "06-Distinct\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "06-MaxProductOfThree", "06-MaxProductOfThree\06-MaxProductOfThree.vcxproj", "{4FB70165-0A72-4D8B-B7ED-EF96F488054E}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "06-NumberOfDicsIntersections", "06-NumberOfDicsIntersections\06-NumberOfDicsIntersections.vcxproj", "{A18FA2C5-BD9C-40AE-87DB-DCBACFE0F4E9}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "06-NumberOfDicsIntersections-Unfinished", "06-NumberOfDicsIntersections\06-NumberOfDicsIntersections.vcxproj", "{A18FA2C5-BD9C-40AE-87DB-DCBACFE0F4E9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01-BinaryGap", "01-BinaryGap\01-BinaryGap.vcxproj", "{8059D0D6-8A51-4472-B431-0B182D869CFE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -143,6 +145,14 @@ Global
 		{A18FA2C5-BD9C-40AE-87DB-DCBACFE0F4E9}.Release|x64.Build.0 = Release|x64
 		{A18FA2C5-BD9C-40AE-87DB-DCBACFE0F4E9}.Release|x86.ActiveCfg = Release|Win32
 		{A18FA2C5-BD9C-40AE-87DB-DCBACFE0F4E9}.Release|x86.Build.0 = Release|Win32
+		{8059D0D6-8A51-4472-B431-0B182D869CFE}.Debug|x64.ActiveCfg = Debug|x64
+		{8059D0D6-8A51-4472-B431-0B182D869CFE}.Debug|x64.Build.0 = Debug|x64
+		{8059D0D6-8A51-4472-B431-0B182D869CFE}.Debug|x86.ActiveCfg = Debug|Win32
+		{8059D0D6-8A51-4472-B431-0B182D869CFE}.Debug|x86.Build.0 = Debug|Win32
+		{8059D0D6-8A51-4472-B431-0B182D869CFE}.Release|x64.ActiveCfg = Release|x64
+		{8059D0D6-8A51-4472-B431-0B182D869CFE}.Release|x64.Build.0 = Release|x64
+		{8059D0D6-8A51-4472-B431-0B182D869CFE}.Release|x86.ActiveCfg = Release|Win32
+		{8059D0D6-8A51-4472-B431-0B182D869CFE}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
