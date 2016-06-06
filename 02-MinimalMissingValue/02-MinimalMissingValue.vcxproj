@@ -14,6 +14,7 @@
     <ProjectGuid>{0799C2C6-05F8-410F-8089-020651E8687C}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>My02MinimalMissingValue</RootNamespace>
+    <ProjectName>04-MinimalMissingValue</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

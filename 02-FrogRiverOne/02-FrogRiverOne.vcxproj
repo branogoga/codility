@@ -14,6 +14,7 @@
     <ProjectGuid>{84705E63-A5A4-4A35-AEC1-389BDA5CD7BC}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>My02FrogRiverOne</RootNamespace>
+    <ProjectName>04-FrogRiverOne</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
