@@ -31,10 +31,28 @@ int solution(vector<int> &A)
         update(events, i - A[i], +1);
         update(events, i + A[i], -1);
     }
+
+    int numberOfIntersections = 0;
+    int currentNumberOfIntersections = 0;
+    for (auto event : events)
+    {
+        if (event.second == +1)
+        {
+            numberOfIntersections += currentNumberOfIntersections;
+        }
+
+        currentNumberOfIntersections += event.second;
+    }
+
+    return numberOfIntersections;
 }
 
 int main()
 {
-    assert(solution(vector<int>({1,5,2,1,4,0})) == 11);
+    assert(solution(vector<int>({ 2,1 })) == 1);
+    assert(solution(vector<int>({ 2,2 })) == 1);
+    assert(solution(vector<int>({ 1,1 })) == 1);
+    assert(solution(vector<int>({ 3,0 })) == 1);
+    //assert(solution(vector<int>({1,5,2,1,4,0})) == 11);
     return 0;
 }
