@@ -17,7 +17,7 @@ int solution(vector<int>& A)
     for (int item : A)
     {
         stack.push_back(item);
-        if (stack.size() > 2)
+        if (stack.size() >= 2)
         {
             if (stack[stack.size() - 1] != stack[stack.size() - 2])
             {
