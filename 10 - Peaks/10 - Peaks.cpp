@@ -7,6 +7,8 @@
 
 using namespace std;
 
+#include <cmath>
+
 vector<int> getDivisors(int N)
 {
     vector<int> divisors;
@@ -79,31 +81,31 @@ int solution(vector<int>& A)
     //
     // Calculate potential number of blocks (divisors of input array size)
     //
-    int N = A.size();
     vector<int> divisors = getDivisors(A.size());
 
     //
     // Binary search over potential candidates
     //
-    int minNumberOfBlocks = 1;
-    int maxNumberOfBlocks = A.size();
-    int currentNumberOfBlocks = maxNumberOfBlocks;
+    int minNumberOfBlocksIndex = 0;
+    int maxNumberOfBlocksIndex = divisors.size() - 1;
 
-    while (maxNumberOfBlocks - minNumberOfBlocks > 1)
+    int currentNumberOfBlocksIndex = minNumberOfBlocksIndex;
+
+    while (maxNumberOfBlocksIndex - minNumberOfBlocksIndex > 1)
     {
-        if (covers(peaks, A.size(), currentNumberOfBlocks))
+        if (covers(peaks, A.size(), divisors[currentNumberOfBlocksIndex]))
         {
-            minNumberOfBlocks = currentNumberOfBlocks;
+            minNumberOfBlocksIndex = currentNumberOfBlocksIndex;
         }
         else
         {
-            maxNumberOfBlocks = currentNumberOfBlocks;
+            maxNumberOfBlocksIndex = currentNumberOfBlocksIndex;
         }
 
-        currentNumberOfBlocks = (minNumberOfBlocks + maxNumberOfBlocks) / 2;
+        currentNumberOfBlocksIndex = (minNumberOfBlocksIndex + maxNumberOfBlocksIndex) / 2;
     }
 
-    return currentNumberOfBlocks;
+    return divisors[currentNumberOfBlocksIndex];
 }
 
 int main()
@@ -112,7 +114,10 @@ int main()
     assert(0 == solution(vector<int>({ 1,1 })));
     assert(0 == solution(vector<int>({ 1,1,1 })));
     assert(1 == solution(vector<int>({ 1,2,1})));
+    assert(1 == solution(vector<int>({ 1,2,1,1,1 }))); // prime length
+    assert(2 == solution(vector<int>({ 1,2,1,2,3,2 })));
     assert(3 == solution(vector<int>({1,2,3,4,3,4,1,2,3,4,6,2})));
+    assert(3 == solution(vector<int>({ 0, 1, 0, 0, 1, 0, 0, 1, 0 }))); 
     return 0;
 }
 
