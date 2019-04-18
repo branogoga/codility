@@ -23,9 +23,11 @@ int solution(const std::vector<int>& A)
     unsigned distinctCount = 0;
 
     // Maximal uncovered value, always one of the values |A[minIndex]|, |A[maxIndex]|
-    unsigned value = std::max(
+    int value = std::max(
         std::abs(A[minIndex]), std::abs(A[maxIndex])
     );
+
+    int previous_value = 0;
 
     while (minIndex != maxIndex)
     {
@@ -40,6 +42,17 @@ int solution(const std::vector<int>& A)
         {
             --maxIndex;
         }
+
+        previous_value = value;
+
+        value = std::max(
+            std::abs(A[minIndex]), std::abs(A[maxIndex])
+        );
+    }
+
+    if (previous_value != value)
+    {
+        ++distinctCount;
     }
 
     return distinctCount;
@@ -54,9 +67,15 @@ int main()
     assert(1 == solution({ -7, 7 }));
     assert(1 == solution({ -7, -7, 7, 7 }));
     assert(2 == solution({ 1, 2 }));
-    //assert(2 == solution({ 1, 1, 2 }));
-    //assert(2 == solution({ -1, 1, 2 }));
-    //assert(5 == solution({ -5, -3, -1, 0, 3, 6 }));
+    assert(2 == solution({ -2, 1 }));
+    assert(2 == solution({ 1, 1, 2 }));
+    assert(2 == solution({ -1, 1, 2 }));
+    assert(2 == solution({ -2, -1, 1 }));
+    assert(2 == solution({ -2, -1, 1, 1, 2 }));
+    assert(5 == solution({ -5, -3, -1, 0, 3, 6 }));
+
+    // !!!! Overflows when abs is calculated!
+    //assert(3 == solution({ -2147483648, -1, 0, 1 }));
 
     return 0;
 }
